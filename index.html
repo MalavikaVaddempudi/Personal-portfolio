@@ -144,30 +144,30 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link data-page="about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link data-page="resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link data-page="portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link data-page="blog">Blog</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link data-page="contact">Contact</button>
           </li>
 
         </ul>
 
       </nav>
 
-      <article class="about  active" data-page="about">
+      <article class="article about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -320,7 +320,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="article resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -513,7 +513,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="article portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -753,7 +753,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="article blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -777,7 +777,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
@@ -805,7 +805,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Best fonts every designer</h3>
@@ -833,7 +833,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Design digest #80</h3>
@@ -861,7 +861,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">UI interactions of the week</h3>
@@ -889,7 +889,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
@@ -917,13 +917,13 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Design digest #79</h3>
 
                   <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
                   </p>
 
                 </div>
@@ -937,47 +937,43 @@
 
       </article>
 
-
-
-
-
       <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="article contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+        <section class="contact-section">
 
-        <section class="contact-form">
+          <div class="contact-info content-card">
+            <h3 class="h3">Get in touch</h3>
 
-          <h3 class="h3 form-title">Contact Form</h3>
+            <p>Email: <a href="mailto:malavika201020@gmail.com">malavika201020@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919493782010">+91 9493782010</a></p>
+            <p>Location: mangamoor road, ongole, andhra pradesh, India</p>
+          </div>
 
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          <form class="contact-form content-card" action="#" method="post" novalidate>
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
 
+            <button type="submit" class="btn">Send message</button>
           </form>
 
         </section>
