@@ -157,3 +157,38 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('[data-nav-link]');
+  const articles = document.querySelectorAll('.article');
+
+  function showPage(page) {
+    if (!page) return;
+    articles.forEach(a => a.classList.toggle('active', a.dataset.page === page));
+    navLinks.forEach(b => b.classList.toggle('active', b.dataset.page === page));
+  }
+
+  // Determine initial page (button active > article active > default 'about')
+  const initialPage =
+    document.querySelector('[data-nav-link].active')?.dataset.page ||
+    document.querySelector('.article.active')?.dataset.page ||
+    'about';
+
+  showPage(initialPage);
+
+  navLinks.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const page = btn.dataset.page;
+      showPage(page);
+    });
+  });
+
+  // Optional: toggle sidebar contacts area if present
+  const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+  const sidebarMore = document.querySelector('.sidebar-info_more');
+  if (sidebarBtn && sidebarMore) {
+    sidebarBtn.addEventListener('click', () => {
+      sidebarMore.classList.toggle('open');
+    });
+  }
+});
